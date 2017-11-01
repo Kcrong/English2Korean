@@ -8,7 +8,7 @@ Korean letter level (가-힣)
 조합된 글자 자체를 출력하면서 데이터 셋에 있는 글자만 사용
 
 
---- NO DROPOUT ---
+--- With DROPOUT ---
 
 """
 from os.path import splitext
@@ -106,14 +106,15 @@ INVERT = True
 HIDDEN_SIZE = 200
 BATCH_SIZE = 100
 LAYERS = 2
-MAX_EPOCHS = 100
+MAX_EPOCHS = 1000
+DROPOUT_RATE = 0.25
 EMBEDDING_OUTPUT_SIZE = 128
 MAX_OUTPUT_SENT_LENGTH = y.shape[1]
 
 RNN = recurrent.GRU
 stop_monitor = 'val_acc'
 stop_delta = 0.0
-stop_epochs = 20
+stop_epochs = 30
 
 
 # ## Build Model
@@ -144,6 +145,7 @@ model.add(RepeatVector(MAX_OUTPUT_SENT_LENGTH))  # Maximum output length
 
 for _ in range(LAYERS):
     model.add(RNN(HIDDEN_SIZE, return_sequences=True))
+    model.add(Dropout(DROPOUT_RATE))
 
 model.add(TimeDistributed(Dense(len(korean_letter_list)+1)))
 model.add(Activation('softmax'))
