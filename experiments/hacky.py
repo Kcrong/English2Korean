@@ -141,6 +141,7 @@ for _ in range(0, 100):
     custom_readable_results = [''.join([idx2korean[let] for let in one_result if let != 0]) for one_result in
                                custom_argmax_result]
 
-    print('------- Result -------')
     for x, y in zip(custom_input_X, custom_readable_results):
         print(x,": ", assemble(y))
+
+    print()
