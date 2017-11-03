@@ -8,7 +8,8 @@
 - no_dropout : Not used `dropout` layer for `decoder`
 - LSTM : Use `LSTM` for `encoder`
 
-FYI) `GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy with 95%  
+## Results
+`GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy with 95%  
 ![result_example](./images/result.png)
 
 
