@@ -8,7 +8,7 @@
 - no_dropout : Not used `dropout` layer for `decoder`
 - LSTM : Use `LSTM` for `encoder`
 
-FYI) `GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy
+FYI) `GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy  
 ![result_example](./images/result.png)
 
 
@@ -19,5 +19,5 @@ If you want to see the graphs, check the `results` or use :
 $ tensorboard --logdir=./log
 ```
 
-then you can see
+then you can see  
 ![tensorboard_image](./images/tensorboard.png)
