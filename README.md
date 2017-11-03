@@ -9,10 +9,11 @@
 - LSTM : Use `LSTM` for `encoder`
 
 ## Results
-`GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy with **95%**
-  
-![result_example](./images/result.png)
+`GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy with **94%**
 
+## Demo
+https://english2korean.herokuapp.com/
+![demo_image](./images/demo.png)
 
 
 ## Tensorboard
