@@ -9,6 +9,8 @@
 - LSTM : Use `LSTM` for `encoder`
 
 FYI) `GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy
+![result_example](./images/result.png)
+
 
 
 ## Tensorboard
@@ -16,3 +18,6 @@ If you want to see the graphs, check the `results` or use :
 ```bash
 $ tensorboard --logdir=./log
 ```
+
+then you can see
+![tensorboard_image](./images/tensorboard.png)
