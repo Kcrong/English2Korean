@@ -12,6 +12,7 @@
 `GRU2GRU_consonant-vowel_LSTM_flip` has the best accuracy with **94%**
 
 ## Demo
+(You have to wait until it boots)
 https://english2korean.herokuapp.com/
 
 ![demo_image](./images/demo.png)
